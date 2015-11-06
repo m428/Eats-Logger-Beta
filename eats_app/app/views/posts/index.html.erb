@@ -1,0 +1,11 @@
+<h1>All Posts/Food Logs</h1>
+
+<ul id='posts'>
+  <% @posts.each do |post| %>
+    <li>
+      <h2><%= link_to post.id, post_path(post) %></h2>
+    </li>
+  <% end %>
+</ul>
+
+<h3><%= link_to "Create New Post/Log", new_post_path, class: "new_post" %></h3>
