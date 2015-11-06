@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   include PostsHelper
-   
+
   def index
     @posts = Post.all
   end
@@ -24,7 +24,26 @@ class PostsController < ApplicationController
     redirect_to post_path(@post)
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
 
+  def update
+    @post = Post.find(params[:id])
+    @post.update(post_params)
 
+    flash.notice = "Post/Food Log Updated!"
 
-end
+    redirect_to post_path(@post)
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+
+    flash.notice = "Post/Food Log Deleted"
+
+    redirect_to posts_path
+  end
+
+end #end of class
