@@ -1,6 +1,13 @@
 <h1>Show Me The Post/Food Log!</h1>
 
 <p><%= @post.caption %></p>
-<%= link_to "Back to Post/Food Log List", posts_path %></br>
+
+
+<h3> <%= @post.comments.size %> comments </h3>
+<!-- Embed new comment form in article show action. Comment on article page directly. -->
+<%= render partial: 'posts/comment', collection: @post.comments %>
+<%= render partial: 'comments/form' %>
+
 <%= link_to "Edit", edit_post_path(@post) %>
 <%= link_to "Remove Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Food Log List", posts_path %></br>

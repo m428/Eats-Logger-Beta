@@ -1,0 +1,17 @@
+<h2> Post A New Comment </h2>
+
+<%= form_for [ @post, @comment ] do |x| %>
+  <p>
+    <%= x.label :author, "Your Name" %></br>
+    <%= x.text_field :author %>
+  </p>
+
+  <p>
+    <%= x.label :body, "Comment Here" %></br>
+    <%= x.text_area :body %></br>
+  </p>
+
+  <p>
+    <%= x.submit 'Submit' %>
+  </p>
+<% end %>
