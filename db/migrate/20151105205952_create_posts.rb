@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :caption
 
       t.timestamps
-
+    end
 
   end
 end
