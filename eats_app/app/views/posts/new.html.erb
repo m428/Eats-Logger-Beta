@@ -1,0 +1,18 @@
+<h1>Create A New Post/Food Log</h1>
+
+<%= form_for(@post) do |x| %>
+  <ul>
+  <% @post.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+
+  <p>
+    <%= x.label :caption %><br />
+    <%= x.text_area :caption %>
+  </p>
+
+  <p>
+    <%= x.submit %>
+  </p>
+<% end %>
