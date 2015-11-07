@@ -8,4 +8,11 @@
   <% end %>
 </ul>
 
-<h3><%= link_to "Create New Post/Log", new_post_path, class: "new_post" %></h3>
+
+<div>
+<% if logged_in? %>
+  <%= link_to "Home", root_path %> |
+  <%= link_to "Record New Log", new_post_path, class: "new_post" %> |
+  <%= link_to "View Users", users_path %> 
+<% end %>
+</div>

@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @user.bio %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to "Food Log List", posts_path %> |
+<%= link_to 'Back', users_path %> |
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Delete Profile', @user, method: :delete, data: { confirm: 'Are you sure?' } %>

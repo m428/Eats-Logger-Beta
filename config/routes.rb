@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
 
-  root 'posts#index'
+  root 'welcome#index'
+
+  resources :users
+
+  resources :user_sessions, only: [ :new, :create, :destroy ]
+
+  get 'login' => 'user_sessions#new'
+  get 'logout' => 'user_sessions#destroy'
+
+  #Do I need a do statment to link posts to users?
   resources :posts do
     resources :comments
+
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

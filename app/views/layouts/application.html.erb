@@ -6,12 +6,25 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-<!-- <p class="flash">
-</p> -->
-
-<%= yield %>
-
+  <!-- <p class="flash">
+    <%= flash.notice %>
+  </p> -->
+  <div id="container">
+    <div id="content">
+      <%= yield %>
+      <hr>
+      <h5>
+        <% if logged_in? %>
+          <%= "Logged in as #{current_user.username}" %> </br>
+        </br>
+          <%= link_to "Logout", logout_path %>
+        <% else %>
+            <%= link_to "Login", login_path %>
+          <% end %>
+      </h5>
+    </div>
+  </div>
 </body>
 </html>
