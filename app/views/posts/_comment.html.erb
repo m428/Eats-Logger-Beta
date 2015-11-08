@@ -1,5 +1,4 @@
 <div>
-  <h4> <%= comment.author %> wrote: </h4>
-  <p class="comment"><%= comment.body %></p></br>
-  <h5> Posted <%= time_ago_in_words (comment.created_at) %> ago... </h5>
+  <p class="comment"><%= comment.body %></p>
+  <h5> <%= time_ago_in_words (comment.created_at) %> ago, <%= comment.author %> wrote: </h5>
 </div>
