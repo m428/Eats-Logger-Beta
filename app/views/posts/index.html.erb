@@ -1,15 +1,11 @@
 <h1>All Food Logs</h1>
 
-<div id='posts'>
   <% @posts.each do |post| %></br>
       <h2><%= link_to "See Log #{post.id}", post_path(post) %></h2>
-  <% end %>
-</div></br>
+  <% end %></br>
 
-<div>
 <% if logged_in? %>
   <%= link_to "Home", root_path %> |
   <%= link_to "Record New Log", new_post_path, class: "new_post" %> |
   <%= link_to "View Users", users_path %>
 <% end %>
-</div>
