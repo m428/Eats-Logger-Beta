@@ -1,8 +1,8 @@
 <h1> Here's That Food Log </h1>
 
 <%= image_tag @post.image.url %>
-<p><%= @post.caption %></p></br>
-</br>
+<h6><%= @post.caption %></p></h6>
+
 
 
 <p> <%= @post.comments.size %> comments </p>
@@ -12,8 +12,7 @@
 </p></br>
 
 <%= link_to "Home", root_path %> |
-<%= link_to "Food Log List", posts_path %></br>
-</br>
+<%= link_to "Food Log List", posts_path %> |
 <% if logged_in? %>
   <%= link_to "Edit Post", edit_post_path(@post) %> |
   <%= link_to "Remove Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %> |
