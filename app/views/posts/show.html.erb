@@ -5,7 +5,7 @@
 
 
 
-<p> <%= @post.comments.size %> comments </p>
+<h6> <%= @post.comments.size %> comments </h6>
 <!-- Embed new comment form in article show action. Comment on article page directly. -->
 <p><%= render partial: 'posts/comment', collection: @post.comments %>
 <%= render partial: 'comments/form' %>
