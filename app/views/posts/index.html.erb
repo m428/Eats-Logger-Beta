@@ -2,9 +2,7 @@
 
 <div id='posts'>
   <% @posts.each do |post| %></br>
-    <div>
       <h2><%= link_to "See Log #{post.id}", post_path(post) %></h2>
-    </div>
   <% end %>
 </div></br>
 
