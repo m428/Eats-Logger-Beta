@@ -26476,3 +26476,12 @@ Started GET "/" for ::1 at 2015-11-08 15:00:13 -0500
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 15:10:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 333ms (Views: 326.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ba15b582b48b10c0b291455d5ff775ea82eea34b59bf1846a2c02de9560f6212.css?body=1" for ::1 at 2015-11-08 15:10:03 -0500
