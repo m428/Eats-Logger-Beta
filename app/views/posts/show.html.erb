@@ -1,7 +1,7 @@
 <h1> Here's That Food Log </h1>
 
 <%= image_tag @post.image.url %>
-<h6><%= @post.caption %></p></h6>
+<h5><%= @post.caption %></p></h5>
 
 
 
@@ -11,10 +11,10 @@
 <%= render partial: 'comments/form' %>
 </p></br>
 
-<%= link_to "Home", root_path %> |
-<%= link_to "Food Log List", posts_path %> |
+<h3><%= link_to "Home", root_path %></h3> |
+<h3><%= link_to "Food Log List", posts_path %></h3> |
 <% if logged_in? %>
-  <%= link_to "Edit Post", edit_post_path(@post) %> |
-  <%= link_to "Remove Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %> |
-  <%= link_to "Record New Log", new_post_path, class: "new_post" %>
+  <h3><%= link_to "Edit Post", edit_post_path(@post) %></h3> |
+  <h3><%= link_to "Remove Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %></h3> |
+  <h3><%= link_to "Record New Log", new_post_path, class: "new_post" %></h3>
 <% end %>
