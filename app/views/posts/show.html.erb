@@ -1,16 +1,21 @@
-<h1>Show Me The Post/Food Log!</h1>
+<h1> Here's That Food Log </h1>
 
-<p><%= @post.caption %></p>
+<%= image_tag @post.image.url %>
+<p><%= @post.caption %></p></br>
+</br>
 
 
-<h3> <%= @post.comments.size %> comments </h3>
+<p> <%= @post.comments.size %> comments </p>
 <!-- Embed new comment form in article show action. Comment on article page directly. -->
-<%= render partial: 'posts/comment', collection: @post.comments %>
+<p><%= render partial: 'posts/comment', collection: @post.comments %>
 <%= render partial: 'comments/form' %>
+</p></br>
 
+<%= link_to "Home", root_path %> |
 <%= link_to "Food Log List", posts_path %></br>
-
+</br>
 <% if logged_in? %>
-  <%= link_to "Edit", edit_post_path(@post) %> |
+  <%= link_to "Edit Post", edit_post_path(@post) %> |
   <%= link_to "Remove Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %> |
+  <%= link_to "Record New Log", new_post_path, class: "new_post" %>
 <% end %>

@@ -6,11 +6,16 @@
   </ul>
 
   <p>
-    <%= x.label :caption %><br />
-    <%= x.text_area :caption %>
-  </p>
+    <%= x.label :image, "Attach Image Here" %></br>
+    <%= x.file_field :image %>
+  </p></br>
 
   <p>
+    <%= x.label :caption %></br>
+    <%= x.text_area :caption %>
+  </p></br>
+
+  <p></br>
     <%= x.submit %>
   </p>
 <% end %>

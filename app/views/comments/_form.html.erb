@@ -1,12 +1,10 @@
-<h2> Post A New Comment </h2>
-
-
+<h2> Post New Comment </h2>
 
 <%= form_for [ @post, @comment ] do |x| %>
   <p>
     <%= x.label :author, "Your Name" %></br>
     <%= x.text_field :author %>
-  </p>
+  </p></br>
 
   <p>
     <%= x.label :body, "Comment Here" %></br>
@@ -15,5 +13,5 @@
 
   <p>
     <%= x.submit 'Submit' %>
-  </p>
+  </p></br>
 <% end %>
