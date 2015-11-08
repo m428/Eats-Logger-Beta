@@ -26271,3 +26271,208 @@ Processing by PostsController#index as HTML
   [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 14:49:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (7.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 366ms (Views: 349.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0ba46827c577f455f4897ea48cb86700cf903578f3aad7e3352a95338806a64b.css?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/assets/user_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-08 14:49:28 -0500
+
+
+Started GET "/posts" for ::1 at 2015-11-08 14:50:06 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (31.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 115ms (Views: 59.0ms | ActiveRecord: 35.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-08 14:50:06 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2015-11-08 14:57:48 -0500
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 258ms (Views: 248.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-08 14:57:48 -0500
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6ce0595e6c7170daecaaa3e9e4ef3b51cc19052416f09ad013a5a171708b3b2e.css?body=1" for ::1 at 2015-11-08 14:57:48 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-08 14:58:24 -0500
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 107ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0ba46827c577f455f4897ea48cb86700cf903578f3aad7e3352a95338806a64b.css?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/assets/user_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-08 14:58:24 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-08 14:59:04 -0500
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/assets/application.self-71780bca5960811bf33818720c95ba38d78ae054989936e53a9b889e347048b7.css?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/assets/user_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-08 14:59:04 -0500
+
+
+Started GET "/users/new" for ::1 at 2015-11-08 14:59:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (75.3ms)
+  Rendered users/new.html.erb within layouts/application (87.9ms)
+Completed 200 OK in 194ms (Views: 147.9ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/users" for ::1 at 2015-11-08 14:59:21 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 14:59:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-08 14:59:23 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-08 14:59:36 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/assets/application.self-f55aecd3aa1826ef281adc36d11245af8881c9c519de38e0aa33c9efb65f9e88.css?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/assets/user_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-08 14:59:36 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-08 14:59:40 -0500
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-11-08 14:59:43 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-11-08 14:59:45 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 14:59:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-11-08 14:59:47 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 15:00:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
