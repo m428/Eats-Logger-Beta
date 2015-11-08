@@ -7,6 +7,11 @@ font-family: 'Oswald', sans-serif;
 margin-top: 115px;
 }
 
+#container {
+  min-width: 600px;
+  max-width: 600px;
+}
+
 h1 {
   font-size: 40pt;
   text-align: center;
