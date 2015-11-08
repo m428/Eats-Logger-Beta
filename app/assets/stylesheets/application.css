@@ -21,7 +21,7 @@ h6 {
 }
 
 p {
-  width: 500px;
+  max-width: 575px;
 }
 
 div {
