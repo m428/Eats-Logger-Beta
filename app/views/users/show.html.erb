@@ -1,25 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p></br>
-
-<p>
-  <strong>Bio:</strong>
-  <%= @user.bio %>
-</p></br>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p></br>
-
-</br>
-
-<p>
-<%= link_to "Food Log List", posts_path %> |
-<%= link_to 'Back', users_path %> |
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to "Food Logs", posts_path %>
+<%= link_to 'Main', users_path %>
+<%= link_to 'Edit Profile', edit_user_path(@user) %>
 <%= link_to 'Delete Profile', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<h2>Your Profile</h2>
+<p>
+  <h3>Username: <%= @user.username %></h3>
+</p>
+<p>
+  <h3>Email: <%= @user.email %></h3>
+</p>
+<p>
+  <h3>Bio:</h3>
+<%= @user.bio %>
 </p>

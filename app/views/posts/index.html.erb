@@ -2,10 +2,11 @@
 
   <% @posts.each do |post| %></br>
       <h2><%= link_to "See Log #{post.id}", post_path(post) %></h2>
-  <% end %></br>
+  <% end %>
 
 <% if logged_in? %>
-  <%= link_to "Home", root_path %> |
-  <%= link_to "Record New Log", new_post_path, class: "new_post" %> |
-  <%= link_to "View Users", users_path %>
+  <%= link_to "New Log", new_post_path, class: "new_post" %>
+  <!-- <%= link_to "New Log", new_post_path(@user, @post) %> -->
+
+  <%= link_to "Home", users_path %>
 <% end %>
